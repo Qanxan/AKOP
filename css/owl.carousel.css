@@ -1,0 +1,62 @@
+/* Core Owl Carousel CSS File v1.3.3 */
+
+/* clearfix */
+.owl-carousel .owl-wrapper::after {
+	content: "";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+	line-height: 0;
+}
+
+/* display none until init */
+.owl-carousel {
+	display: block; /* display: none gereksiz, kullanımı iyileştirildi */
+	position: relative;
+	width: 100%;
+	-ms-touch-action: pan-y;
+}
+
+.owl-carousel .owl-wrapper {
+	display: block; /* display: none gereksiz, kullanımı iyileştirildi */
+	position: relative;
+	transform: translate3d(0, 0, 0); /* Prefixless transform kullanımı */
+}
+
+.owl-carousel .owl-wrapper-outer {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+.owl-carousel .owl-wrapper-outer.autoHeight {
+	transition: height 500ms ease-in-out; /* Prefixless transition kullanımı */
+}
+
+.owl-carousel .owl-item {
+	display: inline-block; /* float yerine inline-block kullanımı */
+	vertical-align: top;  /* Dikey hizalama */
+}
+
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div {
+	cursor: pointer;
+}
+
+.owl-controls {
+	user-select: none;
+	-webkit-tap-highlight-color: transparent; /* Daha modern kullanım */
+}
+
+/* Mouse grab icon */
+.grabbing {
+	cursor: url('grabbing.png') 8 8, move;
+}
+
+/* Fix */
+.owl-carousel .owl-wrapper,
+.owl-carousel .owl-item {
+	backface-visibility: hidden; /* Prefixless backface-visibility */
+	transform: translate3d(0, 0, 0); /* Prefixless transform kullanımı */
+}

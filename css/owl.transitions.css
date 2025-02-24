@@ -1,0 +1,89 @@
+/* Owl Carousel CSS3 Transitions v1.3.2 */
+
+/* Perspective */
+.owl-origin {
+  perspective: 1200px;
+  perspective-origin: 50% 50%; /* Prefixless perspective kullanımı */
+}
+
+/* fade */
+.owl-fade-out {
+  z-index: 10;
+  animation: fadeOut 0.7s both ease;
+}
+
+.owl-fade-in {
+  animation: fadeIn 0.7s both ease;
+}
+
+/* backSlide */
+.owl-backSlide-out {
+  animation: backSlideOut 1s both ease;
+}
+
+.owl-backSlide-in {
+  animation: backSlideIn 1s both ease;
+}
+
+/* goDown */
+.owl-goDown-out {
+  animation: scaleToFade 0.7s ease both;
+}
+
+.owl-goDown-in {
+  animation: goDown 0.6s ease both;
+}
+
+/* scaleUp */
+.owl-fadeUp-in {
+  animation: scaleUpFrom 0.5s ease both;
+}
+
+.owl-fadeUp-out {
+  animation: scaleUpTo 0.5s ease both;
+}
+
+/* Keyframes */
+
+/* fadeIn */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* backSlideOut */
+@keyframes backSlideOut {
+  25% { opacity: 0.5; transform: translateZ(-500px); }
+  75% { opacity: 0.5; transform: translateZ(-500px) translateX(-200%); }
+  100% { opacity: 0.5; transform: translateZ(-500px) translateX(-200%); }
+}
+
+@keyframes backSlideIn {
+  0%, 25% { opacity: 0.5; transform: translateZ(-500px) translateX(200%); }
+  75% { opacity: 0.5; transform: translateZ(-500px); }
+  100% { opacity: 1; transform: translateZ(0) translateX(0); }
+}
+
+/* scaleToFade */
+@keyframes scaleToFade {
+  to { opacity: 0; transform: scale(0.8); }
+}
+
+/* goDown */
+@keyframes goDown {
+  from { transform: translateY(-100%); }
+}
+
+/* scaleUpFrom */
+@keyframes scaleUpFrom {
+  from { opacity: 0; transform: scale(1.5); }
+}
+
+@keyframes scaleUpTo {
+  to { opacity: 0; transform: scale(1.5); }
+}
