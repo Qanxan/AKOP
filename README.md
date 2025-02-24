@@ -1,0 +1,1 @@
+Bu projeyi PHP dilini anlamak için Emrah Yüksel'in kursu ile birlikte hazır template kullanarak yaptım. Frontend kısmında bootstrap, javascript ve çeşitli kütüphaneler hakkında fikir sahibi olurken backend kısmında da görece başarılı bir admin paneli kodlamayı başardım.
